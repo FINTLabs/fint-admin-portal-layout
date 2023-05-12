@@ -1,0 +1,13 @@
+{
+  "name": "admin-portal-layout",
+  "version": "1.0.0",
+  "main": "layout.js",
+  "scripts": {
+    "start": "node layout.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@fintlabs/flais-podium-layout": "^1.0.0"
+  },
+  "devDependencies": {}
+}
