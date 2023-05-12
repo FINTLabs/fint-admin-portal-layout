@@ -3,16 +3,16 @@
   "basePath": "/alpha/fintlabs-no",
   "appBarMenuMainLayout": {
     "appbar": {
-      "name": "fint-kontroll-appbar-pod",
+      "name": "fint-admin-portal-appbar-pod",
       "uri": "http://localhost:7100/manifest.json"
     },
     "menu": {
-      "name": "fint-kontroll-menu-pod",
+      "name": "fint-admin-portal-menu-pod",
       "uri": "http://localhost:7101/manifest.json"
     },
     "main": [
       {
-        "name": "fint-kontroll-role-pod",
+        "name": "fint-admin-portal-dashboard-pod",
         "uri": "http://localhost:7102/manifest.json",
         "path": "/alpha/fintlabs-no",
         "title": "Grupper",
