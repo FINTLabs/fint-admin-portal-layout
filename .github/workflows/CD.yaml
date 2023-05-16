@@ -48,7 +48,7 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
 
-#      ## Alpha cluster ##
+      ## Alpha cluster ##
 #      - name: Bake alpha manifests with Kustomize
 #        uses: azure/k8s-bake@v2.2
 #        with:
@@ -94,7 +94,7 @@ jobs:
             ${{ steps.meta.outputs.tags }}
           namespace: fintlabs-no
           action: deploy
-#
+
 #      ## Api cluster ##
 #      - name: Bake api manifests with Kustomize
 #        uses: azure/k8s-bake@v2.2

@@ -8,15 +8,24 @@
     },
     "menu": {
       "name": "fint-admin-portal-menu-pod",
-      "uri": "http://localhost:7101/manifest.json"
+      "uri": "http://localhost:7100/manifest.json"
     },
     "main": [
       {
         "name": "fint-admin-portal-dashboard-pod",
-        "uri": "http://localhost:7102/manifest.json",
+        "uri": "http://localhost:7100/manifest.json",
         "path": "/alpha/fintlabs-no",
-        "title": "Grupper",
-        "icon": "groups_icon"
+        "title": "Dashboard",
+        "icon": "dashboard",
+        "menuOrder": 0
+      },
+      {
+        "name": "fint-admin-portal-orgs-pod",
+        "uri": "http://localhost:7100/manifest.json",
+        "path": "/alpha/fintlabs-no",
+        "title": "Organisasjoner",
+        "icon": "domain",
+        "menuOrder": 1
       }
     ]
   }
