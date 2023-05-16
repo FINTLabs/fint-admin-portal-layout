@@ -1,36 +1,19 @@
-apiVersion: kustomize.config.k8s.io/v1beta1
-kind: Kustomization
-resources:
-  - ../../base
-patches:
-  - patch: |-
-      - op: replace
-        path: "/spec/basePath"
-        value: /beta/fintlabs-no
-    target:
-      kind: FLAISSso
-      name: fint-admin-portal-sso
-  - patch: |-
-      - op: replace
-        path: "/spec/url/basePath"
-        value: /beta/fintlabs-no
-    target:
-      kind: Application
-      name: fint-admin-portal-layout
-  - patch: |-
-      - op: replace
-        path: "/spec/url/basePath"
-        value: /beta/fintlabs-no/api/layout
-    target:
-      kind: Application
-      name: fint-admin-portal-layout-config-service
-  - patch: |-
-      - op: add
-        path: "/spec/env/-"
-        value:
-          name: LAYOUT_CONFIGURATION_URI
-          value: http://fint-admin-portal-layout-config-service:8080/beta/fintlabs-no/api/layout/configuration
-    target:
-      kind: Application
-      name: fint-admin-portal-layout
-
+apiVersion: fintlabs.no/v1alpha1
+kind: Application
+metadata:
+  name: fint-admin-portal-layout-config-service
+  labels:
+    app.kubernetes.io/component: config
+    app.kubernetes.io/name: fint-admin-portal-layout-config-service
+    app.kubernetes.io/instance: fint-admin-portal-layout-config-service_fintlabs-no
+spec:
+  orgId: fintlabs.no
+  image: ghcr.io/fintlabs/flais-layout-config-service:latest
+  imagePullPolicy: Always
+  url:
+    hostname: admin-test.fintlabs.no
+    basePath: /alpha/fintlabs-no/api/layout
+  ingress:
+    enabled: true
+  database:
+    enabled: true
