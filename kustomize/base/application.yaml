@@ -20,5 +20,5 @@ spec:
   ingress:
     enabled: true
     middlewares:
-      - fint-kontroll-sso
+      - fint-admin-portal-sso
   env: []
