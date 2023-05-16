@@ -12,7 +12,7 @@ spec:
   imagePullPolicy: Always
   url:
     hostname: admin-test.fintlabs.no
-    basePath: /alpha/fintlabs-no/api/layout
+    basePath: /api/layout
   ingress:
     enabled: true
   database:
