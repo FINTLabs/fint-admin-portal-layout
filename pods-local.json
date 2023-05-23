@@ -1,6 +1,6 @@
 {
-  "name": "example",
-  "basePath": "/alpha/fintlabs-no",
+  "name": "admin-portal",
+  "basePath": "/",
   "appBarMenuMainLayout": {
     "appbar": {
       "name": "fint-admin-portal-appbar-pod",
