@@ -1,6 +1,6 @@
 {
   "name": "admin-portal",
-  "basePath": "/beta/fintlabs-no",
+  "basePath": "/",
   "appBarMenuMainLayout": {
     "appbar": {
       "name": "fint-admin-portal-appbar-pod",
@@ -14,7 +14,7 @@
       {
         "name": "fint-admin-portal-dashboard-pod",
         "uri": "http://localhost:7100/manifest.json",
-        "path": "/beta/fintlabs-no",
+        "path": "/alpha/fintlabs-no",
         "title": "Dashboard",
         "icon": "dashboard",
         "menuOrder": 0
@@ -22,7 +22,7 @@
       {
         "name": "fint-admin-portal-orgs-pod",
         "uri": "http://localhost:7100/manifest.json",
-        "path": "/beta/fintlabs-no/org",
+        "path": "/org",
         "title": "Organisasjoner",
         "icon": "domain",
         "menuOrder": 1
