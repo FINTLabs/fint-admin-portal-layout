@@ -7,5 +7,5 @@ metadata:
     app.kubernetes.io/name: fint-admin-portal-sso
     app.kubernetes.io/instance: fint-admin-portal-sso_fintlabs-no
 spec:
-  hostname: admin-test.fintlabs.no
+  hostname: admin-layout.fintlabs.no
   basePath: /dummy

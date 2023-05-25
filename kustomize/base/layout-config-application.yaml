@@ -11,7 +11,7 @@ spec:
   image: ghcr.io/fintlabs/flais-layout-config-service:latest
   imagePullPolicy: Always
   url:
-    hostname: admin-test.fintlabs.no
+    hostname: admin-layout.fintlabs.no
     basePath: /api/layout
   ingress:
     enabled: true
