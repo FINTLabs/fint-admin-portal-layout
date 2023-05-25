@@ -9,7 +9,7 @@ metadata:
 spec:
   port: 3000
   orgId: fintlabs.no
-  image: ghcr.io/fintlabs/fint-admin-portal-layout:sha-580f374
+  image: ghcr.io/fintlabs/fint-admin-portal-layout:sha-fbac145
   prometheus:
     enabled: true
     port: "3000"
