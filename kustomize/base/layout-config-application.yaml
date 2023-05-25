@@ -16,4 +16,4 @@ spec:
   ingress:
     enabled: true
   database:
-    database: fint-admin-portal
+    database: fint-core
