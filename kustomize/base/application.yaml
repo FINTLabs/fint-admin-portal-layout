@@ -16,7 +16,7 @@ spec:
     path: /metrics
   url:
     hostname: admin-layout.fintlabs.no
-    basePath: /
+    basePath: /beta/fintlabs-no
   ingress:
     enabled: true
     middlewares:
