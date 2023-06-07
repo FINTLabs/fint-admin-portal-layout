@@ -15,7 +15,7 @@ spec:
     port: "3000"
     path: /metrics
   url:
-    hostname: adminportalen.fintlabs.no
+    hostname: admin-layout.fintlabs.no
     basePath: /beta/fintlabs-no
   ingress:
     enabled: true
