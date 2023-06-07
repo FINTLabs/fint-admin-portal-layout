@@ -16,7 +16,7 @@ spec:
     path: /metrics
   url:
     hostname: adminportalen.fintlabs.no
-    basePath: /beta
+    basePath: /
   ingress:
     enabled: true
     middlewares:
