@@ -20,7 +20,7 @@
         "menuOrder": 0
       },
       {
-        "name": "fint-admin-portal-orgs-pod",
+        "name": "fint-admin-portal-org-pod",
         "uri": "http://localhost:7100/manifest.json",
         "path": "/org",
         "title": "Organisasjoner",
